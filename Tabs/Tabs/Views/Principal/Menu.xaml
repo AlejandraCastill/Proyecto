@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tabs.Views.Principal.Menu"
+             Title="Menu">
+   
+        <ContentPage.Content>
+
+            <StackLayout Padding="10,10,10,10" BackgroundColor="DarkSeaGreen">
+
+                <Image Source="logo"  WidthRequest="100" HeightRequest="80" />
+            <Label Text="DECLINACURV" FontSize="Large" FontAttributes="Bold" BackgroundColor="White" TextDecorations="Underline" TextColor="White" HorizontalTextAlignment="Center"/>
+
+            <StackLayout>
+                    <StackLayout.Children>
+                        <Frame BackgroundColor="PapayaWhip">
+                            <Frame.Content>
+                            <StackLayout>
+                                <ListView x:Name="listView"
+                                     Margin="20"
+                                        ItemsSource="{Binding PROYECTO}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextCell Text="{Binding Nombre}"
+                                                      Detail="{Binding ProyectoId}"/>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+                        </Frame.Content>
+                        </Frame>
+                    </StackLayout.Children>
+                </StackLayout>
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tabs.Modelo"
+             Title="MODELO DE DECLINACIÓN"
+             Icon="declinacion">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <TableView Intent="Menu">
+                <TableRoot TextColor="Black">
+                <TableSection Title="Selección de Pozos:">
+
+                </TableSection>
+                <TableSection Title="Mostrar Valores por:">
+                    <SwitchCell Text="Promedio"/>
+                    <SwitchCell Text="Suma"/>
+                </TableSection>
+                <TableSection Title="Hidrocarburo:">
+                    <SwitchCell Text="Gas"/>
+                    <SwitchCell Text="Aceite"/>
+                </TableSection>
+                <TableSection Title="Modelo de ARPS:">
+                    <SwitchCell Text="Hiperbólico"/>
+                    <SwitchCell Text="Exponencial"/>
+                    <SwitchCell Text="Armónico"/>
+                </TableSection>
+                <TableSection Title="Producción Inicial (Qi):">
+
+                </TableSection>
+                <TableSection Title="Constante del modelo (b):">
+
+                </TableSection>
+                <TableSection Title="Declinación inicial (Di):">
+
+                </TableSection>
+                <TableSection Title="Precisión:">
+
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                            <StackLayout>
+                            <Button Text="Calcular" BackgroundColor="#8FBC8F" CornerRadius="10" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+                <TableSection >
+                    <SwitchCell Text="Mostar Acumulado" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
